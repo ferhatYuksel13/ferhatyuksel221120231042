@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çalışan Yönetim Sistemi</title>
+</head>
+<body>
+    <h1>Çalışan Yönetim Sistemi</h1>
+
+    <form id="employeeForm">
+        <label for="name">İsim:</label>
+        <input type="text" id="name" required><br>
+        
+        <label for="age">Yaş:</label>
+        <input type="number" id="age" required><br>
+        
+        <label for="department">Departman:</label>
+        <input type="text" id="department" required><br>
+        
+        <label for="salary">Maaş:</label>
+        <input type="number" id="salary" required><br>
+        
+        <button type="submit">Çalışan Ekle</button>
+    </form>
+
+    <h2>Çalışanlar</h2>
+    <ul id="employeeList"></ul>
+
+    <h2>Çalışan Sil</h2>
+    <input type="text" id="deleteName" placeholder="Silinecek Çalışan İsmi">
+    <button onclick="deleteEmployee()">Çalışanı Sil</button>
+
+    <h2>Departmana Göre Listele</h2>
+    <input type="text" id="filterDepartment" placeholder="Departman İsmi">
+    <button onclick="listByDepartment()">Listele</button>
+
+    <h2>Maaşa Göre Sırala</h2>
+    <button onclick="listBySalary('asc')">Artan</button>
+    <button onclick="listBySalary('desc')">Azalan</button>
+
+    <script src="app.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çalışan Yönetim Sistemi</title>
+</head>
+<body>
+    <h1>Çalışan Yönetim Sistemi</h1>
+
+    <form id="employeeForm">
+        <label for="name">İsim:</label>
+        <input type="text" id="name" required><br>
+        
+        <label for="age">Yaş:</label>
+        <input type="number" id="age" required><br>
+        
+        <label for="department">Departman:</label>
+        <input type="text" id="department" required><br>
+        
+        <label for="salary">Maaş:</label>
+        <input type="number" id="salary" required><br>
+        
+        <button type="submit">Çalışan Ekle</button>
+    </form>
+
+    <h2>Çalışanlar</h2>
+    <ul id="employeeList"></ul>
+
+    <h2>Çalışan Sil</h2>
+    <input type="text" id="deleteName" placeholder="Silinecek Çalışan İsmi">
+    <button onclick="deleteEmployee()">Çalışanı Sil</button>
+
+    <h2>Departmana Göre Listele</h2>
+    <input type="text" id="filterDepartment" placeholder="Departman İsmi">
+    <button onclick="listByDepartment()">Listele</button>
+
+    <h2>Maaşa Göre Sırala</h2>
+    <button onclick="listBySalary('asc')">Artan</button>
+    <button onclick="listBySalary('desc')">Azalan</button>
+
+    <h2>Toplam Maaş Hesapla</h2>
+    <button onclick="calculateTotalSalary()">Toplam Maaş</button>
+    <p id="totalSalary"></p>
+
+    <h2>Departman Bazlı Toplam Maaş</h2>
+    <input type="text" id="deptForTotal" placeholder="Departman İsmi">
+    <button onclick="calculateDepartmentSalary()">Departman Toplam Maaş</button>
+    <p id="departmentSalary"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
